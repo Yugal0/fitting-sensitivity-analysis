@@ -102,7 +102,7 @@ def TLMlinnew(p,f):
 @element(num_params=4, units=["Ohm", "Ohm F", "Ohm F", ""],overwrite=True)
 def TLMlinzert(p,f):
     omega = 2 * np.pi * np.array(f)
-    R1, R1Q, R2Q, alpha = p[0], p[1], p[2], p[3]
+    R1, R1Q, R2Q, alpha = p[0], p[1], p[2], p[3] 
     Q=R1Q/R1
     R2=R2Q/Q
     eps=(R2-R1)/R1
